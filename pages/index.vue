@@ -10,6 +10,6 @@
     <ProcessSection id="process" />
 
     <!-- Clients Section -->
-    <ClientsSection id="clients" />
+    <ClientsSection id="results" />
   </div>
 </template>
