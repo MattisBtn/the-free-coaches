@@ -55,8 +55,9 @@
                         </div>
 
                         <iframe :src="vimeoUrl" class="absolute inset-0 w-full h-full rounded-2xl md:rounded-3xl"
-                            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
-                            @load="videoLoaded = true" />
+                            frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                            allowfullscreen @load="videoLoaded = true" />
                     </div>
                 </div>
             </div>
@@ -87,7 +88,7 @@ const videoLoaded = ref(false)
 // Computed
 const vimeoUrl = computed(() => {
     const baseUrl = 'https://player.vimeo.com/video/'
-    const params = '?h=b8ddb35184&autoplay=0&loop=0&muted=0&gesture=media&playsinline=1&quality=auto&transparent=1'
+    const params = '?h=b8ddb35184&autoplay=1&muted=1&preload=auto&badge=0&autopause=0'
     return `${baseUrl}${props.vimeoVideoId}${params}`
 })
 

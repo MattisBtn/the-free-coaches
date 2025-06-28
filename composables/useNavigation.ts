@@ -14,6 +14,7 @@ export const useNavigation = () => {
     { name: "Problèmes", href: "#problems" },
     { name: "Processus", href: "#process" },
     { name: "Résultats", href: "#results" },
+    { name: "L'équipe", href: "#team" },
     { name: "FAQ", href: "#faq" },
   ];
 

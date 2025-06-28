@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import TeamSectionMini from '~/components/TeamSectionMini.vue';
+
+</script>
+
 <template>
   <div>
     <!-- Hero Section -->
@@ -11,6 +16,8 @@
 
     <!-- Clients Section -->
     <ClientsSection id="results" />
+
+    <TeamSectionMini id="team" />
 
     <!-- FAQ Section -->
     <FaqSection id="faq" />
