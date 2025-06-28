@@ -74,17 +74,38 @@
 
                                         <div class="space-y-2">
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Positionnement clair et
                                                     unique</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Offre transformante haut de
                                                     gamme</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Outils de suivi automatisés</span>
                                             </div>
                                         </div>
@@ -139,16 +160,37 @@
 
                                         <div class="space-y-2">
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Publicités créées par
                                                     l'équipe</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Tunnel de vente optimisé</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Prospects qualifiés
                                                     automatiquement</span>
                                             </div>
@@ -203,15 +245,36 @@
 
                                         <div class="space-y-2">
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Scripts personnalisés</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Gestion des objections</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Feedback personnalisé</span>
                                             </div>
                                         </div>
@@ -265,15 +328,36 @@
 
                                         <div class="space-y-2">
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Suivi personnalisé</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Optimisation continue</span>
                                             </div>
                                             <div class="flex items-center gap-3">
-                                                <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                                <div
+                                                    class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                                    <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                        stroke="currentColor" stroke-width="2.5">
+                                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                                            d="M5 13l4 4L19 7" />
+                                                    </svg>
+                                                </div>
                                                 <span class="text-white/60 text-sm">Support humain réactif</span>
                                             </div>
                                         </div>
@@ -317,15 +401,36 @@
 
                                 <div class="space-y-2">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Positionnement clair et unique</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Offre transformante haut de gamme</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Outils de suivi automatisés</span>
                                     </div>
                                 </div>
@@ -357,15 +462,36 @@
 
                                 <div class="space-y-2">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Publicités créées par l'équipe</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Tunnel de vente optimisé</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Prospects qualifiés automatiquement</span>
                                     </div>
                                 </div>
@@ -397,15 +523,36 @@
 
                                 <div class="space-y-2">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Scripts personnalisés</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Gestion des objections</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Feedback personnalisé</span>
                                     </div>
                                 </div>
@@ -437,15 +584,36 @@
 
                                 <div class="space-y-2">
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Suivi personnalisé</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Optimisation continue</span>
                                     </div>
                                     <div class="flex items-center gap-3">
-                                        <div class="w-1.5 h-1.5 bg-primary rounded-full" />
+                                        <div
+                                            class="flex-shrink-0 w-5 h-5 rounded-md bg-gradient-to-br from-primary/80 to-primary flex items-center justify-center">
+                                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24"
+                                                stroke="currentColor" stroke-width="2.5">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M5 13l4 4L19 7" />
+                                            </svg>
+                                        </div>
                                         <span class="text-white/60 text-sm">Support humain réactif</span>
                                     </div>
                                 </div>

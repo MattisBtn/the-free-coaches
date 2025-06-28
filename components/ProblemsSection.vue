@@ -175,12 +175,6 @@
                     <div class="overflow-hidden relative bg-transparent border border-white/[0.08] rounded-3xl h-full">
                         <!-- Header section - Top Left -->
                         <div class="relative z-20 p-8 text-left">
-                            <div
-                                class="inline-flex items-center gap-3 px-4 py-2 rounded-xl bg-orange-500/10 border border-orange-500/20 backdrop-blur-sm mb-4">
-                                <div class="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-                                <span class="text-orange-400 text-sm font-medium">Système défaillant</span>
-                            </div>
-
                             <h4 class="text-3xl md:text-4xl font-bold text-white mb-3">
                                 Suivi client chaotique
                             </h4>

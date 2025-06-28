@@ -3,7 +3,7 @@
         <nav class="flex items-center justify-between max-w-7xl mx-auto px-4 py-4 lg:px-8">
             <!-- Logo -->
             <div class="flex-shrink-0">
-                <NuxtImg src="/images/logo.png" alt="Logo" class="h-8 w-auto sm:h-10 lg:h-12" />
+                <NuxtImg src="/images/logo.png" alt="Logo" class="h-8 w-auto sm:h-10 lg:h-16" />
             </div>
 
             <!-- Menu Navigation - Hidden on mobile -->
@@ -23,7 +23,7 @@
 
             <!-- CTA Button -->
             <div class="flex items-center space-x-4">
-                <AppCta class="hidden sm:flex" @click="handleCtaClick" />
+                <AppCta size="sm" class="hidden sm:flex" @click="handleCtaClick" />
 
                 <!-- Mobile Menu Button -->
                 <button class="md:hidden p-2 text-white hover:bg-white/10 transition-all duration-300"
@@ -63,7 +63,8 @@
                         </a>
                     </li>
                     <li class="pt-4 border-t border-white/20">
-                        <AppCta variant="full-width" @click="() => { handleCtaClick(); toggleMobileMenu(); }" />
+                        <AppCta variant="full-width" size="sm"
+                            @click="() => { handleCtaClick(); toggleMobileMenu(); }" />
                     </li>
                 </ul>
             </div>
