@@ -48,7 +48,7 @@ export default defineNuxtConfig({
 
   // SEO configuration
   site: {
-    url: "https://thefreecoaches.com",
+    // url: process.env.NUXT_PUBLIC_SITE_URL || "https://thefreecoaches.com",
     name: "TheFreeCoaches",
     description:
       "Professional coaching services for personal and business growth",
