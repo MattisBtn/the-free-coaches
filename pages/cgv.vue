@@ -9,18 +9,21 @@
       <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
         <p class="mb-4 text-gray-900 dark:text-gray-100">
           Les présentes Conditions Générales de Vente (ci-après, « CGV ») régissent les relations contractuelles entre
-          <strong>NE GROUP, SLU</strong>, Société à Responsabilité Limitée Unipersonnelle, immatriculée sous le n° Siret
-          20825 S 336 251 260 / NRT (L-715917-L), dont le siège social est situé Carrer de les Escoles, Santa Coloma,
-          Andorre (ci-après, « la Société »), et toute personne (ci-après, « le Client ») souhaitant souscrire aux
+          <strong>{{ appConfig.company.name }}</strong>, {{ appConfig.company.legalForm }}, immatriculée sous le n°
+          Siret
+          {{ appConfig.company.siret }} / {{ appConfig.company.nrt }}, dont le siège social est situé {{
+            appConfig.company.address.full }}
+          (ci-après, « la Société »), et toute personne (ci-après, « le Client ») souhaitant souscrire aux
           services
           proposés sur le site www.thefreecoaches.com ou par tout autre canal de communication.
         </p>
         <p
           class="text-sm bg-blue-50 dark:bg-blue-900/30 p-3 rounded border-l-4 border-blue-400 text-gray-900 dark:text-gray-100">
           <strong>Contact :</strong> Pour toute question, la Société est joignable à
-          <a href="mailto:contact@thefreecoaches.com"
-            class="text-primary hover:underline">contact@thefreecoaches.com</a>
-          ou par téléphone au <a href="tel:+33744096980" class="text-primary hover:underline">+33 7 44 09 69 80</a>.
+          <a :href="`mailto:${appConfig.company.contact.email}`" class="text-primary hover:underline">{{
+            appConfig.company.contact.email }}</a>
+          ou par téléphone au <a :href="`tel:${appConfig.company.contact.phone}`"
+            class="text-primary hover:underline">{{ appConfig.company.contact.phone }}</a>.
         </p>
       </div>
 
@@ -109,7 +112,8 @@
           Article 5 : Moyens de paiement
         </h2>
         <p class="mb-4 text-gray-900 dark:text-gray-100">
-          Les transactions sont effectuées via <strong>TPV VIRTUAL (MONEI)</strong>. Seules les cartes VISA et
+          Les transactions sont effectuées via <strong>{{ appConfig.company.technical.payment }}</strong>. Seules les
+          cartes VISA et
           MASTERCARD sont acceptées.
         </p>
         <div class="grid md:grid-cols-2 gap-4">
@@ -242,7 +246,8 @@
         <p class="text-gray-900 dark:text-gray-100">
           Les données sont traitées conformément au Règlement Général sur la Protection des Données (RGPD).
           Le Client peut adresser toute demande à
-          <a href="mailto:dpo@thefreecoaches.com" class="text-primary hover:underline">dpo@thefreecoaches.com</a>.
+          <a :href="`mailto:${appConfig.company.contact.dpo}`" class="text-primary hover:underline">{{
+            appConfig.company.contact.dpo }}</a>.
         </p>
       </section>
 
@@ -268,7 +273,8 @@
           En cas de différend, les parties s'engagent à tenter une résolution amiable.
         </p>
         <p class="text-gray-900 dark:text-gray-100">
-          À défaut, le tribunal compétent sera celui du siège de la Société, et le droit andorran s'appliquera à toute
+          À défaut, le tribunal compétent sera celui du siège de la Société, et le droit de {{
+            appConfig.company.legal.jurisdiction }} s'appliquera à toute
           procédure.
         </p>
       </section>
@@ -283,6 +289,8 @@
 </template>
 
 <script lang="ts" setup>
+const appConfig = useAppConfig()
+
 // Métadonnées SEO pour la page CGV
 useHead({
   title: 'Conditions Générales de Vente - The Free Coaches',

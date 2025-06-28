@@ -13,16 +13,17 @@
         </h2>
         <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg">
           <ul class="space-y-3 text-gray-900 dark:text-gray-100">
-            <li><strong>Dénomination sociale :</strong> NE GROUP, SLU</li>
-            <li><strong>Forme juridique :</strong> Société à Responsabilité Limitée Unipersonnelle</li>
-            <li><strong>Siège social :</strong> Carrer de les Escoles, Santa Coloma, AD</li>
-            <li><strong>Numéro de Siret :</strong> 20825 S 336 251 260</li>
+            <li><strong>Dénomination sociale :</strong> {{ appConfig.company.name }}</li>
+            <li><strong>Forme juridique :</strong> {{ appConfig.company.legalForm }}</li>
+            <li><strong>Siège social :</strong> {{ appConfig.company.address.full }}</li>
+            <li><strong>Numéro de Siret :</strong> {{ appConfig.company.siret }}</li>
             <li><strong>Adresse e-mail : </strong>
-              <a href="mailto:contact@thefreecoaches.com"
-                class="text-primary hover:underline">contact@thefreecoaches.com</a>
+              <a :href="`mailto:${appConfig.company.contact.email}`" class="text-primary hover:underline">{{
+                appConfig.company.contact.email }}</a>
             </li>
             <li><strong>Téléphone : </strong>
-              <a href="tel:+33744096980" class="text-primary hover:underline">+33 7 44 09 69 80</a>
+              <a :href="`tel:${appConfig.company.contact.phone}`" class="text-primary hover:underline">{{
+                appConfig.company.contact.phone }}</a>
             </li>
           </ul>
         </div>
@@ -39,7 +40,7 @@
         </p>
         <div class="bg-blue-50 dark:bg-blue-900/30 p-4 rounded-lg border-l-4 border-blue-400 mt-3">
           <p class="text-gray-900 dark:text-gray-100">
-            <strong>Nom de l'hébergeur :</strong> Vercel
+            <strong>Nom de l'hébergeur :</strong> {{ appConfig.company.technical.hosting }}
           </p>
         </div>
       </section>
@@ -51,7 +52,8 @@
           3. Activité
         </h2>
         <p class="text-gray-900 dark:text-gray-100">
-          NE GROUP, SLU propose un service d'accompagnement en ligne destiné aux coachs sportifs afin de les aider à
+          {{ appConfig.company.name }} propose un service d'accompagnement en ligne destiné aux coachs sportifs afin de
+          les aider à
           développer leur présence sur Internet et à optimiser leur activité professionnelle.
         </p>
       </section>
@@ -64,7 +66,7 @@
         </h2>
         <p class="mb-4 text-gray-900 dark:text-gray-100">
           Le contenu du site internet (textes, images, vidéos, logos, etc.) est la propriété exclusive de
-          <strong>NE GROUP, SLU</strong>, sauf mention contraire.
+          <strong>{{ appConfig.company.name }}</strong>, sauf mention contraire.
         </p>
         <div class="bg-red-50 dark:bg-red-900/30 p-4 rounded-lg border-l-4 border-red-400">
           <p class="text-sm font-semibold text-red-800 dark:text-red-300">
@@ -84,7 +86,7 @@
           <p class="text-gray-900 dark:text-gray-100">
             Conformément aux lois en vigueur, notamment le <strong>Règlement Général sur la Protection des Données
               (RGPD)</strong>,
-            NE GROUP, SLU s'engage à protéger les données personnelles des utilisateurs.
+            {{ appConfig.company.name }} s'engage à protéger les données personnelles des utilisateurs.
           </p>
           <p class="text-gray-900 dark:text-gray-100">
             Les informations collectées via le site sont utilisées uniquement dans le cadre des services proposés.
@@ -94,8 +96,8 @@
               <strong>Exercice de vos droits :</strong> Pour toute question relative aux données personnelles ou pour
               exercer vos droits d'accès, de rectification ou de suppression, vous pouvez nous contacter à l'adresse
               suivante :
-              <a href="mailto:contact@thefreecoaches.com"
-                class="text-primary hover:underline">contact@thefreecoaches.com</a>
+              <a :href="`mailto:${appConfig.company.contact.email}`" class="text-primary hover:underline">{{
+                appConfig.company.contact.email }}</a>
             </p>
           </div>
         </div>
@@ -109,7 +111,8 @@
         </h2>
         <div class="space-y-4">
           <p class="text-gray-900 dark:text-gray-100">
-            NE GROUP, SLU s'efforce d'assurer la fiabilité des informations présentes sur le site. Toutefois,
+            {{ appConfig.company.name }} s'efforce d'assurer la fiabilité des informations présentes sur le site.
+            Toutefois,
             l'entreprise ne saurait être tenue responsable d'éventuelles erreurs, omissions ou d'un mauvais usage
             des informations disponibles.
           </p>
@@ -130,10 +133,11 @@
         </h2>
         <div class="space-y-4">
           <p class="text-gray-900 dark:text-gray-100">
-            Les présentes mentions légales sont régies par les <strong>lois d'Andorre</strong>.
+            Les présentes mentions légales sont régies par les <strong>{{ appConfig.company.legal.applicableLaw
+              }}</strong>.
           </p>
           <p class="text-gray-900 dark:text-gray-100">
-            En cas de litige, les tribunaux compétents seront ceux du siège social de NE GROUP, SLU,
+            En cas de litige, les tribunaux compétents seront ceux du siège social de {{ appConfig.company.name }},
             sauf disposition légale contraire.
           </p>
         </div>
@@ -151,14 +155,14 @@
         <div class="grid md:grid-cols-2 gap-4">
           <div class="bg-primary/10 p-4 rounded-lg">
             <h4 class="font-semibold text-primary mb-2">Par e-mail :</h4>
-            <a href="mailto:contact@thefreecoaches.com" class="text-primary hover:underline">
-              contact@thefreecoaches.com
+            <a :href="`mailto:${appConfig.company.contact.email}`" class="text-primary hover:underline">
+              {{ appConfig.company.contact.email }}
             </a>
           </div>
           <div class="bg-primary/10 p-4 rounded-lg">
             <h4 class="font-semibold text-primary mb-2">Par téléphone :</h4>
-            <a href="tel:+33744096980" class="text-primary hover:underline">
-              +33 7 44 09 69 80
+            <a :href="`tel:${appConfig.company.contact.phone}`" class="text-primary hover:underline">
+              {{ appConfig.company.contact.phone }}
             </a>
           </div>
         </div>
@@ -174,6 +178,8 @@
 </template>
 
 <script lang="ts" setup>
+const appConfig = useAppConfig()
+
 // Métadonnées SEO pour la page mentions légales
 useHead({
   title: 'Mentions Légales - The Free Coaches',

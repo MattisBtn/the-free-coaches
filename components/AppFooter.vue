@@ -9,8 +9,7 @@
                         <NuxtImg src="/images/logo.png" alt="Logo" class="h-10 w-auto" />
                     </div>
                     <p class="text-white/70 leading-relaxed mb-8 max-w-md">
-                        Transformez votre passion coaching en business rentable avec notre méthode structurée et
-                        éprouvée.
+                        {{ appConfig.company.brand.description }}
                     </p>
                     <div class="flex items-center gap-4">
                         <AppCta text="Commencer maintenant" size="sm" @click="handleCtaClick" />
@@ -42,14 +41,14 @@
                                 class="w-8 h-8 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center">
                                 <Icon name="i-heroicons-envelope" class="w-4 h-4 text-primary" />
                             </div>
-                            <span class="text-white/70">contact@thefreecoaches.com</span>
+                            <span class="text-white/70">{{ appConfig.company.contact.email }}</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <div
                                 class="w-8 h-8 rounded-lg bg-white/[0.05] border border-white/[0.1] flex items-center justify-center">
                                 <Icon name="i-heroicons-phone" class="w-4 h-4 text-primary" />
                             </div>
-                            <span class="text-white/70">+33 7 44 09 69 80</span>
+                            <span class="text-white/70">{{ appConfig.company.contact.phone }}</span>
                         </div>
                     </div>
                 </div>
@@ -82,6 +81,7 @@
 
 <script lang="ts" setup>
 const { menuItems, scrollToSection } = useNavigation()
+const appConfig = useAppConfig()
 
 const currentYear = new Date().getFullYear()
 
