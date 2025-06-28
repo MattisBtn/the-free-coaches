@@ -73,10 +73,6 @@
                             class="text-white/60 hover:text-white text-sm transition-colors duration-200">
                             CGV
                         </NuxtLink>
-                        <NuxtLink to="/politique-confidentialite"
-                            class="text-white/60 hover:text-white text-sm transition-colors duration-200">
-                            Politique de confidentialité
-                        </NuxtLink>
                     </div>
                 </div>
             </div>

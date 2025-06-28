@@ -11,11 +11,11 @@
                 <div class="border border-white/20 rounded-full px-8 py-3 shadow-xl">
                     <ul class="flex items-center space-x-8">
                         <li v-for="item in menuItems" :key="item.name">
-                            <a :href="item.href"
+                            <button
                                 class="text-lg font-medium text-white/90 hover:text-white transition-colors duration-200 hover:scale-105 transform"
                                 @click="(event) => scrollToSection(item.href, event)">
                                 {{ item.name }}
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -56,11 +56,11 @@
                 class="md:hidden mt-4 mx-4 bg-background rounded-2xl p-6 shadow-xl border border-white/10">
                 <ul class="space-y-4">
                     <li v-for="item in menuItems" :key="item.name">
-                        <a :href="item.href"
-                            class="block text-white/90 hover:text-white font-medium py-2 transition-colors duration-200"
+                        <button
+                            class="block text-white/90 hover:text-white font-medium py-2 transition-colors duration-200 w-full text-left"
                             @click="(event) => { scrollToSection(item.href, event); toggleMobileMenu(); }">
                             {{ item.name }}
-                        </a>
+                        </button>
                     </li>
                     <li class="pt-4 border-t border-white/20">
                         <AppCta variant="full-width" size="sm"
