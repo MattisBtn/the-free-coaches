@@ -27,16 +27,16 @@
             </div>
 
             <!-- Dashboards Layout -->
-            <div class="space-y-4 max-w-6xl mx-auto">
+            <div class="space-y-4 max-w-4xl mx-auto">
                 <!-- Top Row: Two cards side by side -->
                 <div class="flex flex-col lg:flex-row gap-0.5 justify-center items-center">
                     <!-- Dashboard 1: Revenue Analytics -->
-                    <div class="relative h-[400px] lg:h-[600px] w-full max-w-[500px] lg:max-w-[450px] xl:max-w-[500px]">
+                    <div class="relative h-[400px] lg:h-[450px] w-full overflow-hidden ">
                         <div
                             class="relative bg-transparent border border-white/[0.08] rounded-3xl overflow-hidden h-full">
                             <!-- Gradient Overlay using Tailwind -->
                             <div
-                                class="z-10 absolute inset-0 bg-linear-to-b from-transparent from-40% via-background/30 via-50% to-background/95 to-90% pointer-events-none" />
+                                class="z-10 absolute inset-0 bg-linear-to-b from-transparent from-0% via-background/90 via-70% to-background/95 to-90% pointer-events-none" />
 
                             <!-- Left to Right Gradient Overlay -->
                             <div
@@ -137,12 +137,12 @@
                     </div>
 
                     <!-- Dashboard 2: Calendar Planning -->
-                    <div class="relative h-[400px] lg:h-[600px] w-full max-w-[500px] lg:max-w-[450px] xl:max-w-[500px]">
+                    <div class="relative h-[400px] lg:h-[450px] w-full overflow-hidden ">
                         <div
                             class="relative bg-transparent border border-white/[0.08] rounded-3xl overflow-hidden h-full">
                             <!-- Gradient Overlay using Tailwind -->
                             <div
-                                class="z-10 absolute inset-0 bg-linear-to-b from-transparent from-40% via-background/30 via-50% to-background/95 to-90% pointer-events-none" />
+                                class="z-10 absolute inset-0 bg-linear-to-b from-transparent from-0% via-background/90 via-60% to-background/95 to-90% pointer-events-none" />
 
                             <!-- Dashboard Area (70%) -->
                             <div class="relative h-[70%]">
@@ -170,22 +170,33 @@
                 </div>
 
                 <!-- Third Dashboard: Client Management Chaos -->
-                <div class="relative h-[500px] lg:h-[700px] w-full max-w-6xl mx-auto">
+                <div class="relative h-[400px] lg:h-[450px] w-full">
                     <!-- Background card -->
                     <div class="overflow-hidden relative bg-transparent border border-white/[0.08] rounded-3xl h-full">
-                        <!-- Header section - Top Left -->
-                        <div class="relative z-20 p-8 text-left">
-                            <h4 class="text-3xl md:text-4xl font-bold text-white mb-3">
+                        <!-- Gradient Overlay using Tailwind -->
+                        <div
+                            class="z-10 absolute inset-0 bg-linear-to-b from-transparent from-40% via-background/30 via-50% to-background/95 to-90% pointer-events-none" />
+
+                        <!-- Left to Right Gradient Overlay -->
+                        <div
+                            class="z-10 absolute inset-0 bg-gradient-to-r from-transparent from-0% via-transparent via-20% to-background/90 to-100% pointer-events-none" />
+
+                        <!-- Dashboard Area (70%) -->
+                        <div class="relative h-[70%] flex items-center justify-center">
+                            <div class="scale-100 lg:scale-150 ml-24 mt-[450px] lg:mt-[700px]">
+                                <NotificationStack />
+                            </div>
+                        </div>
+
+                        <!-- Content Area (30%) -->
+                        <div class="p-6 text-center relative z-20 h-[30%] flex flex-col justify-center">
+                            <h4 class="text-xl md:text-2xl font-bold text-white mb-2">
                                 Suivi client chaotique
                             </h4>
-                            <p class="text-white/60 text-lg max-w-xl leading-relaxed">
+                            <p class="text-white/60 text-sm leading-relaxed">
                                 Quand tu ne sais plus où tu en es avec tes clients,<br>
                                 tu perds leur confiance... et ton business
                             </p>
-                        </div>
-
-                        <div class="mt-24 lg:mt-96 scale-100 lg:scale-200">
-                            <NotificationStack />
                         </div>
                     </div>
                 </div>
