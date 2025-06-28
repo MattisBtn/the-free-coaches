@@ -25,7 +25,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/scripts",
     "@vueuse/nuxt",
-    "@nuxtjs/color-mode",
     "nuxt-mcp",
     "@nuxtjs/seo",
     "@vueuse/motion/nuxt",
@@ -39,16 +38,9 @@ export default defineNuxtConfig({
     },
   },
 
-  // Color mode configuraton
-  colorMode: {
-    preference: "dark",
-    fallback: "dark",
-    classSuffix: "",
-  },
-
   // SEO configuration
   site: {
-    // url: process.env.NUXT_PUBLIC_SITE_URL || "https://thefreecoaches.com",
+    url: "https://thefreecoaches.com",
     name: "TheFreeCoaches",
     description:
       "Professional coaching services for personal and business growth",
@@ -59,7 +51,7 @@ export default defineNuxtConfig({
   fonts: {
     families: [
       {
-        name: "Inter Display",
+        name: "Inter",
         provider: "google",
         weights: [400, 500, 600, 700],
       },
