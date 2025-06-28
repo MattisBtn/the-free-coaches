@@ -14,6 +14,7 @@ export const useNavigation = () => {
     { name: "Problèmes", href: "#problems" },
     { name: "Processus", href: "#process" },
     { name: "Résultats", href: "#results" },
+    { name: "FAQ", href: "#faq" },
   ];
 
   const scrollToSection = async (href: string, event?: Event) => {

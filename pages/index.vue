@@ -11,5 +11,8 @@
 
     <!-- Clients Section -->
     <ClientsSection id="results" />
+
+    <!-- FAQ Section -->
+    <FaqSection id="faq" />
   </div>
 </template>
