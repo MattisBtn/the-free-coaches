@@ -126,6 +126,13 @@
 
                             <!-- Content Area (30%) -->
                             <div class="p-6 text-center relative z-10 h-[30%] flex flex-col justify-center">
+                                <!-- Badge -->
+                                <div
+                                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-white/[0.08] mb-3 mx-auto">
+                                    <div class="w-2 h-2 bg-primary rounded-full" />
+                                    <span class="text-white text-xs font-medium tracking-wide">1er problème</span>
+                                </div>
+
                                 <h4 class="text-xl md:text-2xl font-bold text-white mb-2">
                                     Dashboard financier inutile
                                 </h4>
@@ -158,6 +165,13 @@
 
                             <!-- Content Area (30%) -->
                             <div class="p-6 text-center relative z-10 h-[30%] flex flex-col justify-center">
+                                <!-- Badge -->
+                                <div
+                                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-white/[0.08] mb-3 mx-auto">
+                                    <div class="w-2 h-2 bg-primary rounded-full" />
+                                    <span class="text-white text-xs font-medium tracking-wide">2nd problème</span>
+                                </div>
+
                                 <h4 class="text-xl md:text-2xl font-bold text-white mb-2">
                                     Planning ingérable
                                 </h4>
@@ -190,6 +204,13 @@
 
                         <!-- Content Area (30%) -->
                         <div class="p-6 text-center relative z-20 h-[30%] flex flex-col justify-center">
+                            <!-- Badge -->
+                            <div
+                                class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-background border border-white/[0.08] mb-3 mx-auto">
+                                <div class="w-2 h-2 bg-primary rounded-full" />
+                                <span class="text-white text-xs font-medium tracking-wide">3ème problème</span>
+                            </div>
+
                             <h4 class="text-xl md:text-2xl font-bold text-white mb-2">
                                 Suivi client chaotique
                             </h4>

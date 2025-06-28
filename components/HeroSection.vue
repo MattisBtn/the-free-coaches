@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="flex justify-center pt-2 md:pt-4">
-                    <AppCta :text="ctaText" size="md" class="md:text-lg" @click="handleCtaClick" />
+                    <AppCta :text="ctaText" size="sm" @click="handleCtaClick" />
                 </div>
             </div>
 

@@ -2,14 +2,14 @@
     <div class="relative w-full h-full flex items-center justify-center pt-8 overflow-visible">
         <!-- Calendar container with isometric perspective -->
         <div class="relative w-[450px] h-[380px] transform-gpu" style="transform-style: preserve-3d;">
-            <div class="calendar-card absolute w-full h-full bg-gray-900/90 border border-white/10 rounded-xl backdrop-blur-sm transition-all duration-500 shadow-2xl"
+            <div class="calendar-card absolute w-full h-full bg-background border border-white/10 rounded-xl backdrop-blur-sm transition-all duration-500 shadow-2xl"
                 style="transform: rotateX(42deg) rotateY(21deg) rotateZ(-35deg) translateZ(24px) scale(1.2)">
 
                 <!-- Calendar Header -->
                 <div class="flex items-center justify-between mb-4 p-4 pb-2">
                     <div class="flex items-center gap-3">
                         <div
-                            class="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                            class="w-8 h-8 rounded-xl bg-gradient-to-br from-primary to-primary-hover flex items-center justify-center shadow-lg">
                             <Icon name="i-heroicons-calendar-days" class="w-4 h-4 text-white" />
                         </div>
                         <div>
@@ -146,7 +146,6 @@ const getDayClasses = (dayData: CalendarDay) => {
     transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
     backface-visibility: hidden;
     will-change: transform;
-    background: linear-gradient(135deg, rgba(17, 24, 39, 0.95) 0%, rgba(31, 41, 55, 0.9) 100%);
 }
 
 .calendar-card::before {

@@ -1,12 +1,12 @@
 <template>
     <button :class="[
-        'flex items-center justify-center font-semibold px-6 py-3 rounded-full transition-all duration-300 group',
+        'flex items-center justify-center font-medium px-6 py-3 rounded-full transition-all duration-300 group',
         'bg-primary text-white border border-transparent',
         'hover:bg-background hover:border-white hover:text-white',
         'focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background',
         'disabled:opacity-50 disabled:cursor-not-allowed',
         variant === 'full-width' ? 'w-full' : '',
-        size === 'sm' ? 'px-4 py-2 text-sm' : size === 'lg' ? 'px-8 py-4 text-base' : 'text-base'
+        size === 'sm' ? 'px-4 py-2 text-xs' : size === 'lg' ? 'px-8 py-4 text-sm' : 'text-sm'
     ]" :disabled="disabled" :aria-label="ariaLabel || text" @click="$emit('click', $event)">
         <span class="mr-2">{{ text }}</span>
         <Icon name="i-heroicons-arrow-right" :class="[
