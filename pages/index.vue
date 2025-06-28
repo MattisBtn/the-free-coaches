@@ -8,5 +8,8 @@
 
     <!-- Process Section -->
     <ProcessSection id="process" />
+
+    <!-- Clients Section -->
+    <ClientsSection id="clients" />
   </div>
 </template>
