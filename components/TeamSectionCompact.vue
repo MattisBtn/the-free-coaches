@@ -3,16 +3,9 @@
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Compact Header -->
             <div class="text-center mb-16">
-                <div
-                    class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/[0.02] border border-white/[0.06] backdrop-blur-sm mb-8">
-                    <div class="relative">
-                        <div class="w-2 h-2 bg-primary/60 rounded-full" />
-                        <div class="absolute inset-0 w-2 h-2 bg-primary/20 rounded-full" />
-                    </div>
-                    <span class="text-sm font-medium text-white/70 tracking-wide">L'équipe TheFreeCoaches</span>
-                </div>
+                <SectionBadge text="L'équipe TheFreeCoaches" />
 
-                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight max-w-4xl mx-auto tracking-tight mb-4"
+                <h2 class="gradient-text text-2xl sm:text-3xl md:text-4xl font-bold leading-tight max-w-4xl mx-auto tracking-tight mb-4"
                     style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
                     Une équipe passionnée par votre réussite
                 </h2>
