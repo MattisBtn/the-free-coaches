@@ -58,15 +58,15 @@
                     :aria-expanded="isMobileMenuOpen" @click="toggleMobileMenu">
                     <div class="w-6 h-6 flex flex-col justify-center items-center relative">
                         <span :class="[
-                            'block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out absolute',
+                            'block h-0.5 w-6 force-white transition-all duration-300 ease-in-out absolute',
                             isMobileMenuOpen ? 'rotate-45' : '-translate-y-1.5'
                         ]" />
                         <span :class="[
-                            'block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out absolute',
+                            'block h-0.5 w-6 force-white transition-all duration-300 ease-in-out absolute',
                             isMobileMenuOpen ? 'opacity-0' : 'opacity-100'
                         ]" />
                         <span :class="[
-                            'block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out absolute',
+                            'block h-0.5 w-6 force-white transition-all duration-300 ease-in-out absolute',
                             isMobileMenuOpen ? '-rotate-45' : 'translate-y-1.5'
                         ]" />
                     </div>

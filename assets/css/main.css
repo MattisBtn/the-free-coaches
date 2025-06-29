@@ -10,47 +10,28 @@
   --font-family-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Classe pour le gradient de texte */
-.gradient-text {
+@utility gradient-text {
   background: linear-gradient(
     0deg,
     rgb(153, 153, 153) 0%,
     rgb(255, 255, 255) 91.7261%
-  ) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  background-clip: text !important;
-  color: transparent !important;
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 
-  /* Fallback pour les navigateurs qui ne supportent pas background-clip */
-  @supports not (-webkit-background-clip: text) {
-    background: none !important;
-    color: rgb(255, 255, 255) !important;
+  @media (forced-colors: active) {
+    color: white;
+    background: none;
   }
+}
 
-  /* Force le gradient même en dark mode système */
-  @media (prefers-color-scheme: dark) {
-    background: linear-gradient(
-      0deg,
-      rgb(153, 153, 153) 0%,
-      rgb(255, 255, 255) 91.7261%
-    ) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    color: transparent !important;
-  }
+@utility force-white {
+  background-color: rgb(255, 255, 255);
 
-  @media (prefers-color-scheme: light) {
-    background: linear-gradient(
-      0deg,
-      rgb(153, 153, 153) 0%,
-      rgb(255, 255, 255) 91.7261%
-    ) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
-    background-clip: text !important;
-    color: transparent !important;
+  @media (forced-colors: active) {
+    background-color: ButtonText;
   }
 }
 
