@@ -293,7 +293,7 @@ const appConfig = useAppConfig()
 
 // Métadonnées SEO pour la page CGV
 useHead({
-  title: 'Conditions Générales de Vente - The Free Coaches',
+  title: 'Conditions Générales de Vente',
   meta: [
     {
       name: 'description',

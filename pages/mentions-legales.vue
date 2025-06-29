@@ -134,7 +134,7 @@
         <div class="space-y-4">
           <p class="text-gray-900 dark:text-gray-100">
             Les présentes mentions légales sont régies par les <strong>{{ appConfig.company.legal.applicableLaw
-              }}</strong>.
+            }}</strong>.
           </p>
           <p class="text-gray-900 dark:text-gray-100">
             En cas de litige, les tribunaux compétents seront ceux du siège social de {{ appConfig.company.name }},
@@ -182,7 +182,7 @@ const appConfig = useAppConfig()
 
 // Métadonnées SEO pour la page mentions légales
 useHead({
-  title: 'Mentions Légales - The Free Coaches',
+  title: 'Mentions Légales',
   meta: [
     {
       name: 'description',

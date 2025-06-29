@@ -38,13 +38,28 @@ export default defineNuxtConfig({
     },
   },
 
-  // SEO configuration
+  // SEO configuration optimisée pour TheFreeCoaches
   site: {
     url: "https://thefreecoaches.com",
-    name: "TheFreeCoaches",
+    name: "TheFreeCoaches - Formation Coaching Sportif en Ligne",
     description:
-      "Professional coaching services for personal and business growth",
+      "Méthode Coaching 2.0 : Aidez les coachs sportifs à développer une activité en ligne rentable et stable. Générez 5k€ à 15k€/mois avec nos tunnels d'acquisition automatisés et notre accompagnement personnalisé.",
     defaultLocale: "fr",
+  },
+
+  // Configuration SEO avancée
+  seo: {
+    redirectToCanonicalSiteUrl: true,
+  },
+
+  // Configuration robots et indexation
+  robots: {
+    blockAiBots: false, // On veut être indexé par les IA pour la visibilité
+  },
+
+  // Configuration sitemap
+  sitemap: {
+    cacheMaxAgeSeconds: 86400, // 24h
   },
 
   // Fonts optimization
