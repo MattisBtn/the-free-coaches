@@ -7,8 +7,8 @@
                 <SectionBadge text="L'équipe" />
 
                 <div class="mb-8 space-y-4">
-                    <h2 class="gradient-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[0.9] max-w-5xl mx-auto tracking-tight"
-                        style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    <h2
+                        class="gradient-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[0.9] max-w-5xl mx-auto tracking-tight">
                         L'expertise qui transforme votre business
                     </h2>
 

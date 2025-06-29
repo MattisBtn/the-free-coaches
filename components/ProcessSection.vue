@@ -6,8 +6,8 @@
                 <SectionBadge text="La méthode structurée" />
 
                 <div class="mb-12 space-y-6">
-                    <h2 class="gradient-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[0.9] max-w-5xl mx-auto tracking-tight"
-                        style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    <h2
+                        class="gradient-text text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[0.9] max-w-5xl mx-auto tracking-tight">
                         4 étapes pour transformer votre coaching
                     </h2>
 
@@ -31,8 +31,8 @@
                             <div class="flex-shrink-0 w-32 flex justify-center">
                                 <div class="relative">
                                     <!-- Number -->
-                                    <div class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center"
-                                        style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                    <div
+                                        class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center">
                                         01
                                     </div>
                                     <!-- Dot on line -->
@@ -117,8 +117,8 @@
                             <div class="flex-shrink-0 w-32 flex justify-center">
                                 <div class="relative">
                                     <!-- Number -->
-                                    <div class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center"
-                                        style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                    <div
+                                        class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center">
                                         02
                                     </div>
                                     <!-- Dot on line -->
@@ -203,8 +203,8 @@
                             <div class="flex-shrink-0 w-32 flex justify-center">
                                 <div class="relative">
                                     <!-- Number -->
-                                    <div class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center"
-                                        style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                    <div
+                                        class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center">
                                         03
                                     </div>
                                     <!-- Dot on line -->
@@ -286,8 +286,8 @@
                             <div class="flex-shrink-0 w-32 flex justify-center">
                                 <div class="relative">
                                     <!-- Number -->
-                                    <div class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center"
-                                        style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                                    <div
+                                        class="gradient-text text-6xl md:text-7xl font-bold leading-none select-none text-center">
                                         04
                                     </div>
                                     <!-- Dot on line -->

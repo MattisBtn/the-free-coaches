@@ -5,8 +5,8 @@
             <div class="text-center mb-16">
                 <SectionBadge text="L'équipe TheFreeCoaches" />
 
-                <h2 class="gradient-text text-2xl sm:text-3xl md:text-4xl font-bold leading-tight max-w-4xl mx-auto tracking-tight mb-4"
-                    style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                <h2
+                    class="gradient-text text-2xl sm:text-3xl md:text-4xl font-bold leading-tight max-w-4xl mx-auto tracking-tight mb-4">
                     Une équipe passionnée par votre réussite
                 </h2>
             </div>
