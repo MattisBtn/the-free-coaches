@@ -28,6 +28,8 @@ export default defineNuxtConfig({
     "nuxt-mcp",
     "@nuxtjs/seo",
     "@vueuse/motion/nuxt",
+    "@nuxtjs/fontaine",
+    "nuxt-vitalizer",
   ],
 
   // App configuration
@@ -35,6 +37,12 @@ export default defineNuxtConfig({
     head: {
       viewport: "width=device-width, initial-scale=1",
       charset: "utf-8",
+      meta: [
+        {
+          name: "google-site-verification",
+          content: "jdqoACsVDKDa0DYLxABisRKmSxo3K09jjLOfQeFA8Q0",
+        },
+      ],
     },
   },
 
@@ -71,5 +79,11 @@ export default defineNuxtConfig({
         weights: [400, 500, 600, 700],
       },
     ],
+  },
+
+  vitalizer: {
+    // Remove the render-blocking entry CSS
+    disableStylesheets: "entry",
+    disablePrefetchLinks: true,
   },
 });

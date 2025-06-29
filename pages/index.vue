@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import TeamSectionMini from '~/components/TeamSectionMini.vue';
 
 // Configuration SEO complète pour la page d'accueil
 useSeoMeta({
