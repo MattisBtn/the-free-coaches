@@ -3,14 +3,7 @@
         <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
             <div class="text-center mb-20">
-                <div
-                    class="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-white/[0.02] border border-white/[0.06] backdrop-blur-sm mb-12">
-                    <div class="relative">
-                        <div class="w-3 h-3 bg-primary/60 rounded-full" />
-                        <div class="absolute inset-0 w-3 h-3 bg-primary/20 rounded-full" />
-                    </div>
-                    <span class="text-base font-medium text-white/70 tracking-wide">La méthode structurée</span>
-                </div>
+                <SectionBadge text="La méthode structurée" />
 
                 <div class="mb-12 space-y-6">
                     <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[0.9] max-w-5xl mx-auto tracking-tight"
