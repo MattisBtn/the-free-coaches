@@ -15,7 +15,7 @@
                 <div class="mb-12 space-y-6">
                     <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-[0.9] max-w-5xl mx-auto tracking-tight"
                         style="background-image: linear-gradient(0deg, rgb(153, 153, 153) 0%, rgb(255, 255, 255) 91.7261%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                        Qui se cache derrière TheFreeCoach ?
+                        Qui se cache derrière TheFreeCoaches ?
                     </h2>
 
                     <p
@@ -141,7 +141,7 @@
                                 <p class="text-white/80 leading-relaxed text-sm">
                                     Petit frère d'Antoine, Alex est à l'origine de la <span
                                         class="text-blue-400 font-medium">stratégie de croissance</span>
-                                    de TheFreeCoach. Expert acquisition de tous les coachs accompagnés.
+                                    de TheFreeCoaches. Expert acquisition de tous les coachs accompagnés.
                                 </p>
                                 <p class="text-white/80 leading-relaxed text-sm">
                                     Il pilote toute la stratégie marketing pour que chaque coach ait un système
@@ -281,7 +281,7 @@
                             <div class="space-y-4">
                                 <p class="text-white/80 leading-relaxed text-sm">
                                     Camille, c'est <span class="text-purple-400 font-medium">la voix douce mais
-                                        ferme</span> de toute la communauté TheFreeCoach.
+                                        ferme</span> de toute la communauté TheFreeCoaches.
                                     Elle veille à ce que chaque coach reçoive un suivi humain et réactif.
                                 </p>
                                 <p class="text-white/80 leading-relaxed text-sm">
@@ -340,5 +340,5 @@
 </template>
 
 <script lang="ts" setup>
-// Team section component showcasing the TheFreeCoach team
+// Team section component showcasing the TheFreeCoaches team
 </script>

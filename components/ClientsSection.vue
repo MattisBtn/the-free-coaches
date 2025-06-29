@@ -70,8 +70,8 @@
                                         </div>
 
                                         <!-- Story with badges -->
-                                        <div
-                                            class="relative bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-3xl p-6 overflow-hidden">
+                                        <div class="relative bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-3xl p-6 overflow-hidden cursor-pointer transition-all duration-300 hover:border-primary/40"
+                                            @click="toggleClientExpansion('shirley')">
                                             <div class="relative z-10 space-y-4">
                                                 <p class="text-white/90 text-base leading-relaxed">
                                                     Shirley, coach en haltérophilie, sortait de diplôme, <span
@@ -80,22 +80,50 @@
                                                         class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">carrière
                                                         banque</span>.
                                                 </p>
-                                                <p class="text-white/90 text-base leading-relaxed">
-                                                    Elle rêvait de vivre du <span
-                                                        class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">coaching
-                                                        à distance</span>, mais ne savait pas comment s'y prendre.
-                                                </p>
-                                                <div class="pt-3 border-t border-white/10">
+
+                                                <!-- Truncated content -->
+                                                <div v-if="expandedClient !== 'shirley'">
                                                     <p class="text-white/90 text-base leading-relaxed">
-                                                        Quelques mois plus tard, elle a <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">arrêté
-                                                            le présentiel</span>, gère <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">16
-                                                            coachings en ligne</span>, et attire <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">10-30
-                                                            abonnés/jour</span> grâce aux ads.
+                                                        Elle rêvait de vivre du coaching à distance...
+                                                        <span class="text-primary text-sm font-medium ml-1">
+                                                            voir plus
+                                                        </span>
                                                     </p>
                                                 </div>
+
+                                                <!-- Full content with animation -->
+                                                <Transition enter-active-class="transition-all duration-400 ease-out"
+                                                    enter-from-class="opacity-0 max-h-0"
+                                                    enter-to-class="opacity-100 max-h-[200px]"
+                                                    leave-active-class="transition-all duration-300 ease-in"
+                                                    leave-from-class="opacity-100 max-h-[200px]"
+                                                    leave-to-class="opacity-0 max-h-0">
+                                                    <div v-if="expandedClient === 'shirley'" class="overflow-hidden">
+                                                        <p class="text-white/90 text-base leading-relaxed">
+                                                            Elle rêvait de vivre du <span
+                                                                class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">coaching
+                                                                à distance</span>, mais ne savait pas comment s'y
+                                                            prendre.
+                                                        </p>
+                                                        <div class="pt-3 border-t border-white/10 mt-4">
+                                                            <p class="text-white/90 text-base leading-relaxed">
+                                                                Quelques mois plus tard, elle a <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">arrêté
+                                                                    le présentiel</span>, gère <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">16
+                                                                    coachings en ligne</span>, et attire <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">10-30
+                                                                    abonnés/jour</span> grâce aux ads.
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="mt-3">
+                                                            <span class="text-primary/60 text-sm font-medium">
+                                                                voir moins
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </Transition>
                                             </div>
                                         </div>
                                     </div>
@@ -147,8 +175,8 @@
                                         </div>
 
                                         <!-- Story with badges -->
-                                        <div
-                                            class="relative bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-3xl p-6 overflow-hidden">
+                                        <div class="relative bg-gradient-to-br from-primary/15 to-primary/5 border border-primary/30 rounded-3xl p-6 overflow-hidden cursor-pointer transition-all duration-300 hover:border-primary/40"
+                                            @click="toggleClientExpansion('hedi')">
                                             <div class="relative z-10 space-y-4">
                                                 <p class="text-white/90 text-base leading-relaxed">
                                                     Hedi <span
@@ -159,23 +187,51 @@
                                                         class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">sans
                                                         résultat en ligne</span> malgré 6 mois d'efforts en solo.
                                                 </p>
-                                                <p class="text-white/90 text-base leading-relaxed">
-                                                    En rejoignant le <span
-                                                        class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">Coaching
-                                                        2.0</span>, il a appris à structurer son offre, maîtriser la
-                                                    vente, et attirer ses premières clientes.
-                                                </p>
-                                                <div class="pt-3 border-t border-white/10">
+
+                                                <!-- Truncated content -->
+                                                <div v-if="expandedClient !== 'hedi'">
                                                     <p class="text-white/90 text-base leading-relaxed">
-                                                        Résultat : plus de <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">9
-                                                            500 € en 2 mois</span>, <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">10
-                                                            clientes signées</span> et une <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">activité
-                                                            hybride</span> bien rodée.
+                                                        En rejoignant le Coaching 2.0...
+                                                        <span class="text-primary text-sm font-medium ml-1">
+                                                            voir plus
+                                                        </span>
                                                     </p>
                                                 </div>
+
+                                                <!-- Full content with animation -->
+                                                <Transition enter-active-class="transition-all duration-400 ease-out"
+                                                    enter-from-class="opacity-0 max-h-0"
+                                                    enter-to-class="opacity-100 max-h-[200px]"
+                                                    leave-active-class="transition-all duration-300 ease-in"
+                                                    leave-from-class="opacity-100 max-h-[200px]"
+                                                    leave-to-class="opacity-0 max-h-0">
+                                                    <div v-if="expandedClient === 'hedi'" class="overflow-hidden">
+                                                        <p class="text-white/90 text-base leading-relaxed">
+                                                            En rejoignant le <span
+                                                                class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">Coaching
+                                                                2.0</span>, il a appris à structurer son offre,
+                                                            maîtriser la
+                                                            vente, et attirer ses premières clientes.
+                                                        </p>
+                                                        <div class="pt-3 border-t border-white/10 mt-4">
+                                                            <p class="text-white/90 text-base leading-relaxed">
+                                                                Résultat : plus de <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">9
+                                                                    500 € en 2 mois</span>, <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">10
+                                                                    clientes signées</span> et une <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">activité
+                                                                    hybride</span> bien rodée.
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="mt-3">
+                                                            <span class="text-primary/60 text-sm font-medium">
+                                                                voir moins
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </Transition>
                                             </div>
                                         </div>
                                     </div>
@@ -228,8 +284,8 @@
                                         </div>
 
                                         <!-- Story with badges -->
-                                        <div
-                                            class="relative bg-gradient-to-br from-primary/15 to-yellow-400/5 border border-primary/30 rounded-3xl p-6 overflow-hidden">
+                                        <div class="relative bg-gradient-to-br from-primary/15 to-yellow-400/5 border border-primary/30 rounded-3xl p-6 overflow-hidden cursor-pointer transition-all duration-300 hover:border-primary/40"
+                                            @click="toggleClientExpansion('nicolas')">
                                             <div class="relative z-10 space-y-4">
                                                 <p class="text-white/90 text-base leading-relaxed">
                                                     Nico, préparateur mental, était <span
@@ -240,22 +296,51 @@
                                                         class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">2
                                                         200 € sur son compte</span>.
                                                 </p>
-                                                <p class="text-white/90 text-base leading-relaxed">
-                                                    Après plusieurs <span
-                                                        class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">coachings
-                                                        décevants</span>, il décide de nous faire confiance en <span
-                                                        class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">juin</span>.
-                                                </p>
-                                                <div class="pt-3 border-t border-white/10">
+
+                                                <!-- Truncated content -->
+                                                <div v-if="expandedClient !== 'nicolas'">
                                                     <p class="text-white/90 text-base leading-relaxed">
-                                                        En appliquant notre méthode à la lettre, il passe de <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">0
-                                                            à 15 000 € en 90 jours</span>, en vendant des
-                                                        accompagnements premium à <span
-                                                            class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">1800
-                                                            €</span>.
+                                                        Après plusieurs coachings décevants...
+                                                        <span class="text-primary text-sm font-medium ml-1">
+                                                            voir plus
+                                                        </span>
                                                     </p>
                                                 </div>
+
+                                                <!-- Full content with animation -->
+                                                <Transition enter-active-class="transition-all duration-400 ease-out"
+                                                    enter-from-class="opacity-0 max-h-0"
+                                                    enter-to-class="opacity-100 max-h-[200px]"
+                                                    leave-active-class="transition-all duration-300 ease-in"
+                                                    leave-from-class="opacity-100 max-h-[200px]"
+                                                    leave-to-class="opacity-0 max-h-0">
+                                                    <div v-if="expandedClient === 'nicolas'" class="overflow-hidden">
+                                                        <p class="text-white/90 text-base leading-relaxed">
+                                                            Après plusieurs <span
+                                                                class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">coachings
+                                                                décevants</span>, il décide de nous faire confiance en
+                                                            <span
+                                                                class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">juin</span>.
+                                                        </p>
+                                                        <div class="pt-3 border-t border-white/10 mt-4">
+                                                            <p class="text-white/90 text-base leading-relaxed">
+                                                                En appliquant notre méthode à la lettre, il passe de
+                                                                <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">0
+                                                                    à 15 000 € en 90 jours</span>, en vendant des
+                                                                accompagnements premium à <span
+                                                                    class="px-2 py-1 rounded-full bg-primary/30 text-primary text-xs font-medium">1800
+                                                                    €</span>.
+                                                            </p>
+                                                        </div>
+
+                                                        <div class="mt-3">
+                                                            <span class="text-primary/60 text-sm font-medium">
+                                                                voir moins
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </Transition>
                                             </div>
                                         </div>
                                     </div>
@@ -531,6 +616,17 @@
 const currentIndex = ref(0)
 const isHovering = ref(false)
 let rotationInterval: NodeJS.Timeout | null = null
+
+// Mobile expansion state
+const expandedClient = ref<string | null>(null)
+
+const toggleClientExpansion = (clientName: string) => {
+    if (expandedClient.value === clientName) {
+        expandedClient.value = null
+    } else {
+        expandedClient.value = clientName
+    }
+}
 
 // Card positions configuration
 const positions = [

@@ -9,7 +9,7 @@
                         <div class="w-2 h-2 bg-primary/60 rounded-full" />
                         <div class="absolute inset-0 w-2 h-2 bg-primary/20 rounded-full" />
                     </div>
-                    <span class="text-sm font-medium text-white/70 tracking-wide">L'équipe TheFreeCoach</span>
+                    <span class="text-sm font-medium text-white/70 tracking-wide">L'équipe TheFreeCoaches</span>
                 </div>
 
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight max-w-4xl mx-auto tracking-tight mb-4"

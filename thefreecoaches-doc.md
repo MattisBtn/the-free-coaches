@@ -147,11 +147,11 @@ On leur installe un modèle rentable, clair, et durable qui fonctionne même san
 
 ---
 
-## 👥 Qui se cache derrière TheFreeCoach ?
+## 👥 Qui se cache derrière TheFreeCoaches ?
 
-**TheFreeCoach, c'est avant tout une équipe à taille humaine, passionnée par le sport, le coaching… et les résultats concrets.**
+**TheFreeCoaches, c'est avant tout une équipe à taille humaine, passionnée par le sport, le coaching… et les résultats concrets.**
 
-### 🧠 Antoine — Fondateur de TheFreeCoach
+### 🧠 Antoine — Fondateur de TheFreeCoaches
 
 Ancien sportif de haut niveau, Antoine a démarré comme coach terrain. Pendant plusieurs années, il a bâti son activité de coaching sportif de A à Z, en testant toutes les approches possibles : contenu, site web, bouche-à-oreille…
 
@@ -159,7 +159,7 @@ Mais c'est en structurant un vrai modèle en ligne qu'il a pu vivre confortablem
 
 ### 🎯 Alex — Expert acquisition & marketing
 
-Petit frère d'Antoine, Alex est à l'origine de la stratégie de croissance de TheFreeCoach. Il a d'abord accompagné Antoine dans l'ombre, sur son activité de coaching, avant de devenir l'expert acquisition de tous les coachs accompagnés.
+Petit frère d'Antoine, Alex est à l'origine de la stratégie de croissance de TheFreeCoaches. Il a d'abord accompagné Antoine dans l'ombre, sur son activité de coaching, avant de devenir l'expert acquisition de tous les coachs accompagnés.
 
 Publicités, tunnels, positionnement, contenus… il pilote toute la stratégie marketing pour que chaque coach ait un système d'acquisition clair, rentable, et automatisé.
 
@@ -171,7 +171,7 @@ Sa mission : que chaque coach soit fièrement aligné avec son offre, et armé d
 
 ### 🤝 Camille — Responsable relation clients
 
-Camille, c'est la voix douce mais ferme de toute la communauté TheFreeCoach. Elle veille à ce que chaque coach reçoive un suivi humain, réactif, et structuré.
+Camille, c'est la voix douce mais ferme de toute la communauté TheFreeCoaches. Elle veille à ce que chaque coach reçoive un suivi humain, réactif, et structuré.
 
 Des premiers échanges jusqu'à l'autonomie, elle s'assure que chacun avance sereinement, en lien constant avec l'équipe et les outils mis à disposition.
 
