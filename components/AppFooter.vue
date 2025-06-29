@@ -12,7 +12,7 @@
                         {{ appConfig.company.brand.description }}
                     </p>
                     <div class="flex items-center gap-4">
-                        <AppCta text="Commencer maintenant" size="sm" @click="handleCtaClick" />
+                        <AppCta text="Commencer maintenant" size="sm" />
                     </div>
                 </div>
 
@@ -84,8 +84,4 @@ const { menuItems, scrollToSection } = useNavigation()
 const appConfig = useAppConfig()
 
 const currentYear = new Date().getFullYear()
-
-const handleCtaClick = () => {
-    console.log('Footer CTA clicked')
-}
 </script>
