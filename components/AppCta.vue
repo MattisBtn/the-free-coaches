@@ -7,7 +7,7 @@
         'disabled:opacity-50 disabled:cursor-not-allowed',
         variant === 'full-width' ? 'w-full' : '',
         size === 'sm' ? 'px-4 py-2 text-xs' : size === 'lg' ? 'px-8 py-4 text-sm' : 'text-sm'
-    ]" :disabled="disabled" :aria-label="ariaLabel || text" @click="$emit('click', $event)">
+    ]" :disabled="disabled" :aria-label="ariaLabel || text" @click="handleClick">
         <span class="mr-2">{{ text }}</span>
         <Icon name="i-heroicons-arrow-right" :class="[
             'transition-all duration-300 rotate-[-45deg] group-hover:rotate-0 group-focus:rotate-0',
@@ -26,16 +26,28 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-    text: 'Commencer',
+    text: 'Réserver un appel',
     variant: 'default',
     size: 'md',
     disabled: false,
-    ariaLabel: 'Commencer'
+    ariaLabel: 'Réserver un appel de coaching stratégique'
 })
 
-defineEmits<{
+const emit = defineEmits<{
     click: [event: Event]
 }>()
 
+const appConfig = useAppConfig()
 
+const handleClick = async (event: Event) => {
+    emit('click', event)
+
+    // Ouvrir Calendly dans un nouvel onglet
+    await navigateTo(appConfig.company.booking.calendly, {
+        external: true,
+        open: {
+            target: '_blank'
+        }
+    })
+}
 </script>

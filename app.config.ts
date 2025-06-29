@@ -21,6 +21,9 @@ export default defineAppConfig({
         "Transformez votre passion coaching en business rentable avec notre méthode structurée et éprouvée.",
       tagline: "Accompagnement en ligne pour coachs sportifs",
     },
+    booking: {
+      calendly: "https://calendly.com/d/yqm-29p-vkx/coaching-strategique-o",
+    },
     technical: {
       hosting: "Vercel",
       payment: "TPV VIRTUAL (MONEI)",

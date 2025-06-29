@@ -8,9 +8,9 @@ export interface MenuItem {
 export const useNavigation = () => {
   const router = useRouter();
   const route = useRoute();
+  const activeSection = ref<string>("#home");
 
   const menuItems: MenuItem[] = [
-    { name: "Accueil", href: "#home" },
     { name: "Problèmes", href: "#problems" },
     { name: "Processus", href: "#process" },
     { name: "Résultats", href: "#results" },
@@ -18,28 +18,56 @@ export const useNavigation = () => {
     { name: "FAQ", href: "#faq" },
   ];
 
-  const scrollToSection = async (href: string, event?: Event) => {
-    if (event) {
-      event.preventDefault();
-    }
+  const initializeActiveSection = () => {
+    if (import.meta.client) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          const visibleEntry = entries.find((entry) => entry.isIntersecting);
+          if (visibleEntry) {
+            activeSection.value = `#${visibleEntry.target.id}`;
+          }
+        },
+        { threshold: 0.5 }
+      );
 
-    // Si on n'est pas sur la page d'accueil, naviguer d'abord vers l'accueil
+      // Observer toutes les sections après le mount
+      nextTick(() => {
+        const allSections = [...menuItems, { name: "Accueil", href: "#home" }];
+        allSections.forEach((item) => {
+          const element = document.getElementById(item.href.slice(1));
+          if (element) observer.observe(element);
+        });
+      });
+
+      onBeforeUnmount(() => observer.disconnect());
+    }
+  };
+
+  const scrollToSection = async (href: string, event?: Event) => {
+    event?.preventDefault();
+
+    activeSection.value = href;
+
     if (route.path !== "/") {
       await router.push("/");
-      // Attendre un petit délai pour que la page se charge
-      await new Promise((resolve) => setTimeout(resolve, 100));
+      await nextTick();
     }
 
-    // Maintenant faire le scroll vers la section
     if (href.startsWith("#")) {
-      // Offset ajusté pour le nouveau header plus grand
       const headerOffset = window.innerWidth >= 1024 ? 280 : 120;
       handleSmoothScroll(href, undefined, headerOffset);
     }
   };
 
+  const isActiveSection = (href: string): boolean => {
+    return activeSection.value === href;
+  };
+
   return {
     menuItems,
     scrollToSection,
+    activeSection: readonly(activeSection),
+    isActiveSection,
+    initializeActiveSection,
   };
 };

@@ -7,6 +7,9 @@
         </main>
 
         <AppFooter />
+
+        <!-- Scroll to top FAB -->
+        <ScrollToTopFab />
     </div>
 </template>
 

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import TeamSectionMini from '~/components/TeamSectionMini.vue';
 
+// Le tracking des sections actives est géré par AppHeader.vue
+// Pas besoin d'initialisation ici
 </script>
 
 <template>
