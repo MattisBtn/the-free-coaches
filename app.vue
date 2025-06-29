@@ -8,18 +8,18 @@
 </template>
 
 <script setup lang="ts">
-// Global SEO configuration
+// Configuration SEO globale (fallbacks seulement)
 useSeoMeta({
   titleTemplate: "%s | TheFreeCoaches",
-  ogImage: "/images/og-image.jpg",
   twitterCard: "summary_large_image",
 });
 
-// Structured data
+// Schema.org global - Organisation de base
 useSchemaOrg([
   defineOrganization({
     name: "TheFreeCoaches",
     logo: "/images/logo.png",
+    url: "https://thefreecoaches.com",
     sameAs: [
       "https://www.instagram.com/thefreecoaches/",
       "https://www.facebook.com/thefreecoaches/",
