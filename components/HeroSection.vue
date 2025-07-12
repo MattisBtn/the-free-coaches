@@ -5,14 +5,16 @@
 
                 <div class="flex items-center justify-center space-x-3 md:space-x-6">
                     <div class="flex -space-x-2 md:-space-x-3">
-                        <NuxtImg v-for="i in 5" :key="i" :src="`/images/coachs/${i}.jpg`"
+                        <NuxtImg
+v-for="i in 5" :key="i" :src="`/images/coachs/${i}.jpg`"
                             class="w-8 h-8 md:w-12 md:h-12 rounded-full border-2 md:border-3 border-white object-cover"
                             :style="{ zIndex: 10 - i }" />
                     </div>
 
                     <div class="text-left">
                         <div class="flex space-x-0.5 md:space-x-1 mb-1">
-                            <Icon v-for="i in 5" :key="i" name="i-heroicons-star-solid"
+                            <Icon
+v-for="i in 5" :key="i" name="i-heroicons-star-solid"
                                 class="w-3 h-3 md:w-4 md:h-4 text-yellow-400" />
                         </div>
                         <div class="text-xs md:text-sm font-medium text-white">
@@ -42,7 +44,8 @@
                 <div class="relative max-w-5xl mx-auto">
                     <div
                         class="relative aspect-video rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl bg-gray-900 border border-white/10">
-                        <div v-if="!videoLoaded"
+                        <div
+v-if="!videoLoaded"
                             class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-gray-900 to-gray-800">
                             <div class="text-center space-y-3 md:space-y-4">
                                 <div
@@ -54,7 +57,8 @@
                             </div>
                         </div>
 
-                        <iframe :src="vimeoUrl" class="absolute inset-0 w-full h-full rounded-2xl md:rounded-3xl"
+                        <iframe
+:src="vimeoUrl" class="absolute inset-0 w-full h-full rounded-2xl md:rounded-3xl"
                             frameborder="0"
                             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
                             allowfullscreen @load="videoLoaded = true" />
@@ -72,7 +76,7 @@ const props = withDefaults(defineProps<{
     ctaText?: string
     vimeoVideoId?: string
 }>(), {
-    title: 'Transformez votre passion coaching en business rentable',
+    title: 'On aide les coachs sportifs à développeur leurs activité grâce au coaching 2.0',
     subtitle: 'La méthode Coaching pour créer un système d\'acquisition automatisé et transformer votre passion en business rentable.',
     ctaText: 'Découvrir la méthode',
     vimeoVideoId: '1090844630'
