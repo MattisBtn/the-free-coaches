@@ -76,7 +76,7 @@ const props = withDefaults(defineProps<{
     ctaText?: string
     vimeoVideoId?: string
 }>(), {
-    title: 'On aide les coachs sportifs à développeur leurs activité grâce au coaching 2.0',
+    title: 'On aide les coachs sportifs à développer leurs activités grâce au coaching 2.0',
     subtitle: 'La méthode Coaching pour créer un système d\'acquisition automatisé et transformer votre passion en business rentable.',
     ctaText: 'Découvrir la méthode',
     vimeoVideoId: '1090844630'
