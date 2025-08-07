@@ -13,7 +13,7 @@ export const useNavigation = () => {
   const menuItems: MenuItem[] = [
     { name: "Problèmes", href: "#problems" },
     { name: "Processus", href: "#process" },
-    { name: "Résultats", href: "#results" },
+    // { name: "Résultats", href: "#results" },
     { name: "L'équipe", href: "#team" },
     { name: "FAQ", href: "#faq" },
   ];
