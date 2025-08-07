@@ -1,5 +1,5 @@
 <template>
-    <button :class="[
+    <a :href="computedHref" :target="target" :class="[
         'flex items-center justify-center font-medium px-6 py-3 rounded-full transition-all duration-300 group',
         'bg-primary text-white border border-transparent',
         'hover:bg-background hover:border-white hover:text-white',
@@ -7,13 +7,13 @@
         'disabled:opacity-50 disabled:cursor-not-allowed',
         variant === 'full-width' ? 'w-full' : '',
         size === 'sm' ? 'px-4 py-2 text-xs' : size === 'lg' ? 'px-8 py-4 text-sm' : 'text-sm'
-    ]" :disabled="disabled" :aria-label="ariaLabel || text" @click="handleClick">
+    ]" :aria-label="ariaLabel || text" @click="handleClick">
         <span class="mr-2">{{ text }}</span>
         <Icon name="i-heroicons-arrow-right" :class="[
             'transition-all duration-300 rotate-[-45deg] group-hover:rotate-0 group-focus:rotate-0',
             size === 'sm' ? 'w-3 h-3' : size === 'lg' ? 'w-5 h-5' : 'w-5 h-5'
         ]" />
-    </button>
+    </a>
 </template>
 
 <script lang="ts" setup>
@@ -23,6 +23,7 @@ interface Props {
     size?: 'sm' | 'md' | 'lg'
     disabled?: boolean
     ariaLabel?: string
+    target?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -30,11 +31,16 @@ const props = withDefaults(defineProps<Props>(), {
     variant: 'default',
     size: 'md',
     disabled: false,
-    ariaLabel: 'Réserver un appel de coaching stratégique'
+    ariaLabel: 'Réserver un appel de coaching stratégique',
+    target: '_blank'
 })
 
 const appConfig = useAppConfig()
 const gtm = useGtm()
+
+const computedHref = computed(() => {
+    return appConfig.company.booking.calendly
+})
 
 const handleClick = async (event: Event) => {
     // Tracking GTM - Clic sur CTA Calendly
@@ -53,15 +59,5 @@ const handleClick = async (event: Event) => {
             }
         })
     }
-
-    // Ouvrir Calendly dans un nouvel onglet avec redirection vers thank-you
-    const calendlyUrl = `${appConfig.company.booking.calendly}?redirect_url=${encodeURIComponent(window.location.origin + '/thank-you')}`
-
-    await navigateTo(calendlyUrl, {
-        external: true,
-        open: {
-            target: '_blank'
-        }
-    })
 }
 </script>
