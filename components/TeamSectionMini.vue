@@ -35,7 +35,7 @@
                 <div :class="[
                     'group cursor-pointer rounded-2xl border transition-all duration-500 relative overflow-hidden',
                     'hover:bg-white/[0.02] lg:hover:border-primary/30 hover:shadow-lg hover:-translate-y-1',
-                    'active:scale-[0.98] active:transition-transform active:duration-100',
+                    'active:scale-[0.98] active:transition-transform active:duration-100 min-w-[200px]',
                     isMobile ? (
                         expandedMember === 'antoine'
                             ? 'col-span-2 bg-white/[0.03] border-primary/40 p-6 shadow-xl'
@@ -100,7 +100,7 @@
                 <div :class="[
                     'group cursor-pointer rounded-2xl border transition-all duration-500 relative overflow-hidden',
                     'hover:bg-white/[0.02] lg:hover:border-blue-500/30 hover:shadow-lg hover:-translate-y-1',
-                    'active:scale-[0.98] active:transition-transform active:duration-100',
+                    'active:scale-[0.98] active:transition-transform active:duration-100 min-w-[200px]',
                     isMobile ? (
                         expandedMember === 'alex'
                             ? 'col-span-2 bg-white/[0.03] border-blue-500/40 p-6 shadow-xl'
@@ -164,7 +164,7 @@
                 <div :class="[
                     'group cursor-pointer rounded-2xl border transition-all duration-500 relative overflow-hidden',
                     'hover:bg-white/[0.02] lg:hover:border-green-500/30 hover:shadow-lg hover:-translate-y-1',
-                    'active:scale-[0.98] active:transition-transform active:duration-100',
+                    'active:scale-[0.98] active:transition-transform active:duration-100 min-w-[200px]',
                     isMobile ? (
                         expandedMember === 'maxence'
                             ? 'col-span-2 bg-white/[0.03] border-green-500/40 p-6 shadow-xl'
@@ -229,7 +229,7 @@
                 <div :class="[
                     'group cursor-pointer rounded-2xl border transition-all duration-500 relative overflow-hidden',
                     'hover:bg-white/[0.02] lg:hover:border-purple-500/30 hover:shadow-lg hover:-translate-y-1',
-                    'active:scale-[0.98] active:transition-transform active:duration-100',
+                    'active:scale-[0.98] active:transition-transform active:duration-100 min-w-[200px]',
                     isMobile ? (
                         expandedMember === 'camille'
                             ? 'col-span-2 bg-white/[0.03] border-purple-500/40 p-6 shadow-xl'

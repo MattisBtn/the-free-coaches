@@ -134,7 +134,7 @@
         <div class="space-y-4">
           <p class="text-gray-900 dark:text-gray-100">
             Les présentes mentions légales sont régies par les <strong>{{ appConfig.company.legal.applicableLaw
-            }}</strong>.
+              }}</strong>.
           </p>
           <p class="text-gray-900 dark:text-gray-100">
             En cas de litige, les tribunaux compétents seront ceux du siège social de {{ appConfig.company.name }},
@@ -180,16 +180,50 @@
 <script lang="ts" setup>
 const appConfig = useAppConfig()
 
-// Métadonnées SEO pour la page mentions légales
-useHead({
+// Métadonnées SEO pour la page mentions légales - Correction avec useSeoMeta
+useSeoMeta({
   title: 'Mentions Légales',
-  meta: [
-    {
-      name: 'description',
-      content: 'Consultez les mentions légales de The Free Coaches. Informations sur l\'entreprise, hébergement, propriété intellectuelle et protection des données.'
-    }
-  ]
+  description: 'Consultez les mentions légales de The Free Coaches. Informations sur l\'entreprise, hébergement, propriété intellectuelle et protection des données.',
+  keywords: 'mentions légales, TheFreeCoaches, entreprise, hébergement, propriété intellectuelle, RGPD',
+
+  // Open Graph
+  ogTitle: 'Mentions Légales',
+  ogDescription: 'Consultez les mentions légales de The Free Coaches. Informations sur l\'entreprise, hébergement, propriété intellectuelle et protection des données.',
+  ogType: 'website',
+  ogLocale: 'fr_FR',
+
+  // Twitter
+  twitterTitle: 'Mentions Légales',
+  twitterDescription: 'Consultez les mentions légales de The Free Coaches. Informations sur l\'entreprise, hébergement, propriété intellectuelle et protection des données.',
+
+  // Robots
+  robots: 'noindex,nofollow', // Pages légales généralement non indexées
 })
+
+// Schema.org pour la page mentions légales
+useSchemaOrg([
+  defineWebPage({
+    name: 'Mentions Légales',
+    description: 'Mentions légales de TheFreeCoaches',
+    url: 'https://thefreecoaches.com/mentions-legales',
+  }),
+  defineOrganization({
+    name: 'TheFreeCoaches',
+    url: 'https://thefreecoaches.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: appConfig.company.address.street,
+      addressLocality: appConfig.company.address.city,
+      addressCountry: appConfig.company.address.country,
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: appConfig.company.contact.phone,
+      email: appConfig.company.contact.email,
+      contactType: 'customer service'
+    }
+  })
+])
 </script>
 
 <style scoped>

@@ -12,7 +12,3 @@
         <ScrollToTopFab />
     </div>
 </template>
-
-<script lang="ts" setup>
-// Le layout par défaut avec header et footer
-</script>

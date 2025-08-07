@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-// Configuration SEO complète pour la page d'accueil
+// Configuration SEO complète pour la page d'accueil - Amélioration cohérence
 useSeoMeta({
   title: "Méthode Coaching 2.0 pour Coachs Sportifs",
   description: "Transformez votre coaching sportif avec notre méthode Coaching 2.0. Générez 5k€ à 15k€/mois grâce à nos tunnels d'acquisition automatisés, offres digitales haut de gamme et accompagnement personnalisé. ✅ Système testé sur 500+ coachs",

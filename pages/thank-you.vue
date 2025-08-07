@@ -30,13 +30,44 @@
 </template>
 
 <script lang="ts" setup>
-// SEO Meta
+// SEO Meta amélioré
 useSeoMeta({
-    title: 'Merci pour votre réservation - TheFreeCoaches',
+    title: 'Merci pour votre réservation',
     description: 'Votre appel a été confirmé. Nous sommes impatients de vous aider à transformer votre coaching en business rentable.',
-    ogTitle: 'Merci pour votre réservation - TheFreeCoaches',
+    keywords: 'réservation confirmée, coaching sportif, TheFreeCoaches, accompagnement coachs, business coaching',
+
+    // Open Graph
+    ogTitle: 'Merci pour votre réservation',
     ogDescription: 'Votre appel a été confirmé. Nous sommes impatients de vous aider à transformer votre coaching en business rentable.',
+    ogType: 'website',
+    ogLocale: 'fr_FR',
+
+    // Twitter
+    twitterTitle: 'Merci pour votre réservation',
+    twitterDescription: 'Votre appel a été confirmé. Nous sommes impatients de vous aider à transformer votre coaching en business rentable.',
+
+    // Robots
+    robots: 'noindex,nofollow', // Page de confirmation généralement non indexée
 })
+
+// Schema.org pour la page de remerciement
+useSchemaOrg([
+    defineWebPage({
+        name: 'Merci pour votre réservation',
+        description: 'Page de confirmation de réservation TheFreeCoaches',
+        url: 'https://thefreecoaches.com/thank-you',
+    }),
+    defineOrganization({
+        name: 'TheFreeCoaches',
+        url: 'https://thefreecoaches.com',
+        contactPoint: {
+            '@type': 'ContactPoint',
+            telephone: '+33 7 44 09 69 80',
+            email: 'contact@thefreecoaches.com',
+            contactType: 'customer service'
+        }
+    })
+])
 
 // Tracking GTM - Conversion Calendly
 const gtm = useGtm()

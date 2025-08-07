@@ -8,7 +8,6 @@
 <script setup lang="ts">
 // Configuration SEO globale (fallbacks seulement)
 useSeoMeta({
-  titleTemplate: "%s | TheFreeCoaches",
   twitterCard: "summary_large_image",
 });
 

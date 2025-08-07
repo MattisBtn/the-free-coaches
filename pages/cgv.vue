@@ -291,16 +291,44 @@
 <script lang="ts" setup>
 const appConfig = useAppConfig()
 
-// Métadonnées SEO pour la page CGV
-useHead({
+// Métadonnées SEO pour la page CGV - Correction avec useSeoMeta
+useSeoMeta({
   title: 'Conditions Générales de Vente',
-  meta: [
-    {
-      name: 'description',
-      content: 'Consultez les conditions générales de vente de The Free Coaches pour nos services d\'accompagnement des coachs sportifs.'
-    }
-  ]
+  description: 'Consultez les conditions générales de vente de The Free Coaches pour nos services d\'accompagnement des coachs sportifs.',
+  keywords: 'conditions générales de vente, CGV, TheFreeCoaches, coaching sportif, accompagnement coachs',
+
+  // Open Graph
+  ogTitle: 'Conditions Générales de Vente',
+  ogDescription: 'Consultez les conditions générales de vente de The Free Coaches pour nos services d\'accompagnement des coachs sportifs.',
+  ogType: 'website',
+  ogLocale: 'fr_FR',
+
+  // Twitter
+  twitterTitle: 'Conditions Générales de Vente',
+  twitterDescription: 'Consultez les conditions générales de vente de The Free Coaches pour nos services d\'accompagnement des coachs sportifs.',
+
+  // Robots
+  robots: 'noindex,nofollow', // Pages légales généralement non indexées
 })
+
+// Schema.org pour la page CGV
+useSchemaOrg([
+  defineWebPage({
+    name: 'Conditions Générales de Vente',
+    description: 'Conditions générales de vente de TheFreeCoaches',
+    url: 'https://thefreecoaches.com/cgv',
+  }),
+  defineOrganization({
+    name: 'TheFreeCoaches',
+    url: 'https://thefreecoaches.com',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: appConfig.company.contact.phone,
+      email: appConfig.company.contact.email,
+      contactType: 'customer service'
+    }
+  })
+])
 </script>
 
 <style scoped>

@@ -79,7 +79,7 @@
             enter-from-class="opacity-0 -translate-y-4 scale-95" enter-to-class="opacity-100 translate-y-0 scale-100"
             leave-active-class="transition-all duration-200 ease-in"
             leave-from-class="opacity-100 translate-y-0 scale-100" leave-to-class="opacity-0 -translate-y-4 scale-95">
-            <div v-if="isMobileMenuOpen"
+            <div v-if="isMobileMenuOpen" ref="mobileMenuRef"
                 class="md:hidden mx-4 mb-4 backdrop-blur-lg bg-background/90 rounded-2xl p-6 shadow-xl border border-white/10">
                 <ul class="space-y-3">
                     <li v-for="item in menuItems" :key="item.name">
@@ -104,10 +104,18 @@
 <script lang="ts" setup>
 const { menuItems, scrollToSection, isActiveSection, initializeActiveSection } = useNavigation()
 const isMobileMenuOpen = ref(false)
+const mobileMenuRef = ref<HTMLElement>()
 
 const toggleMobileMenu = () => {
     isMobileMenuOpen.value = !isMobileMenuOpen.value
 }
+
+// Close mobile menu when clicking outside
+onClickOutside(mobileMenuRef, () => {
+    if (isMobileMenuOpen.value) {
+        isMobileMenuOpen.value = false
+    }
+})
 
 onMounted(() => {
     // Initialiser l'observer pour les sections actives une seule fois
