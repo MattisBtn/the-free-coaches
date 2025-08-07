@@ -22,7 +22,7 @@ export default defineAppConfig({
       tagline: "Accompagnement en ligne pour coachs sportifs",
     },
     booking: {
-      calendly: "https://calendly.com/d/yqm-29p-vkx/coaching-strategique-o",
+      calendly: "https://calendly.com/d/cv3f-8h6-w89/coaching-strategique-s",
     },
     technical: {
       hosting: "Vercel",
