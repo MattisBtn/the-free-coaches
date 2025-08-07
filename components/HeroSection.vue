@@ -1,5 +1,5 @@
 <template>
-    <section class="relative overflow-hidden">
+    <section class="relative overflow-hidden" id="home">
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-16">
             <div class="text-center space-y-8 md:space-y-12">
 

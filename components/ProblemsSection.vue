@@ -1,5 +1,5 @@
 <template>
-    <section class="relative lg:py-24 overflow-hidden">
+    <section class="relative lg:py-24 overflow-hidden" id="problems">
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
             <div class="text-center mb-20 md:mb-32 lg:mb-40">

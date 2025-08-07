@@ -60,20 +60,20 @@ useSchemaOrg([
 <template>
   <div>
     <!-- Hero Section -->
-    <HeroSection id="home" />
+    <HeroSection />
 
     <!-- Problems Section -->
-    <ProblemsSection id="problems" />
+    <ProblemsSection />
 
     <!-- Process Section -->
-    <ProcessSection id="process" />
+    <ProcessSection />
 
     <!-- Clients Section -->
-    <ClientsSection id="results" />
+    <ClientsSection />
 
-    <TeamSectionMini id="team" />
+    <TeamSectionMini />
 
     <!-- FAQ Section -->
-    <FaqSection id="faq" />
+    <FaqSection />
   </div>
 </template>

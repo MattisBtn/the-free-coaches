@@ -1,5 +1,5 @@
 <template>
-    <section class="relative py-12 overflow-hidden">
+    <section class="relative py-12 overflow-hidden" id="team">
         <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
 
             <!-- Header -->
