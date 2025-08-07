@@ -33,15 +33,9 @@ withDefaults(defineProps<Props>(), {
     ariaLabel: 'Réserver un appel de coaching stratégique'
 })
 
-const emit = defineEmits<{
-    click: [event: Event]
-}>()
-
 const appConfig = useAppConfig()
 
 const handleClick = async (event: Event) => {
-    emit('click', event)
-
     // Ouvrir Calendly dans un nouvel onglet
     await navigateTo(appConfig.company.booking.calendly, {
         external: true,

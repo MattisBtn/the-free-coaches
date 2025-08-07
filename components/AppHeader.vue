@@ -39,7 +39,7 @@
 
                     <!-- CTA Button -->
                     <div class="flex-shrink-0 ml-10">
-                        <AppCta size="sm" @click="handleCtaClick" />
+                        <AppCta size="sm" />
                     </div>
                 </div>
             </div>
@@ -93,8 +93,7 @@
                         </button>
                     </li>
                     <li class="pt-6 border-t border-white/20">
-                        <AppCta variant="full-width" size="md"
-                            @click="() => { handleCtaClick(); toggleMobileMenu(); }" />
+                        <AppCta variant="full-width" size="md" />
                     </li>
                 </ul>
             </div>
@@ -108,10 +107,6 @@ const isMobileMenuOpen = ref(false)
 
 const toggleMobileMenu = () => {
     isMobileMenuOpen.value = !isMobileMenuOpen.value
-}
-
-const handleCtaClick = () => {
-    // Le CTA gère maintenant sa propre logique de navigation
 }
 
 onMounted(() => {
