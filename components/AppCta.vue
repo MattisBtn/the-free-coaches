@@ -54,8 +54,10 @@ const handleClick = async (event: Event) => {
         })
     }
 
-    // Ouvrir Calendly dans un nouvel onglet
-    await navigateTo(appConfig.company.booking.calendly, {
+    // Ouvrir Calendly dans un nouvel onglet avec redirection vers thank-you
+    const calendlyUrl = `${appConfig.company.booking.calendly}?redirect_url=${encodeURIComponent(window.location.origin + '/thank-you')}`
+
+    await navigateTo(calendlyUrl, {
         external: true,
         open: {
             target: '_blank'
