@@ -25,7 +25,7 @@ interface Props {
     ariaLabel?: string
 }
 
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
     text: 'Réserver un appel',
     variant: 'default',
     size: 'md',
@@ -34,8 +34,26 @@ withDefaults(defineProps<Props>(), {
 })
 
 const appConfig = useAppConfig()
+const gtm = useGtm()
 
 const handleClick = async (event: Event) => {
+    // Tracking GTM - Clic sur CTA Calendly
+    if (gtm) {
+        gtm.trackEvent({
+            event: 'cta_click',
+            category: 'engagement',
+            action: 'click',
+            label: 'calendly_booking',
+            value: 1,
+            custom_parameters: {
+                button_text: props.text,
+                button_variant: props.variant,
+                button_size: props.size,
+                destination: 'calendly'
+            }
+        })
+    }
+
     // Ouvrir Calendly dans un nouvel onglet
     await navigateTo(appConfig.company.booking.calendly, {
         external: true,

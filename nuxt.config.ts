@@ -30,7 +30,21 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
     "@nuxtjs/fontaine",
     "nuxt-vitalizer",
+    "@zadigetvoltaire/nuxt-gtm",
   ],
+
+  // Configuration GTM
+  gtm: {
+    id: "GTM-WFPK9L29",
+    defer: false,
+    compatibility: false,
+    enabled: true,
+    debug: false,
+    loadScript: true,
+    enableRouterSync: true,
+    trackOnNextTick: false,
+    devtools: true,
+  },
 
   // App configuration
   app: {
