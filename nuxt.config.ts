@@ -31,6 +31,7 @@ export default defineNuxtConfig({
     "@nuxtjs/fontaine",
     "nuxt-vitalizer",
     "@zadigetvoltaire/nuxt-gtm",
+    "nuxt-gtag",
   ],
 
   // Configuration GTM
@@ -99,5 +100,9 @@ export default defineNuxtConfig({
     // Remove the render-blocking entry CSS
     disableStylesheets: "entry",
     disablePrefetchLinks: true,
+  },
+
+  gtag: {
+    id: "AW-812873404",
   },
 });
